@@ -1,3 +1,9 @@
+:root {
+  --h1color1: #800080;
+  --h1color2: #FFD700;
+  --pcolor1: #330733;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,12 +25,13 @@ body {
       align-items: center;
       position: fixed;
       top: 0px;
+      z-index: 1000;
     }
 
 
   /*Logo styles*/
 
-  h1 {
+  header h1 {
       display: inline-block;
       text-align: center;
       position: relative;
@@ -32,7 +39,7 @@ body {
       text-align: left;
       font-family: 'Caveat', sans-serif;
       font-size: 2.7rem;
-      color: #FFD700
+      color: var(--h1color2);
         
   }
     
@@ -92,3 +99,103 @@ main {
   padding-top: 65px;
   margin: 0;
 }
+
+main h1 {
+  color: var(--h1color1);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  
+}
+
+p {
+  color: var(--pcolor1)
+}
+
+  /* MAIN - FORM */
+  form {
+    width: 30vw;
+    min-width: 300px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+
+  }
+
+  .info {
+  padding: 10px;
+  }
+
+  form input {
+    width: 100%;
+    border: 1px solid var(--h1color1);
+    border-radius: 3px;
+    font-size: 0.95rem;
+    color: var(--pcolor1);
+    height: 1.6rem;
+  }
+
+  form label {
+    font-size: 1rem;
+    color: var(--h1color1);
+    font-weight: 600;
+  }
+
+  #submit {
+    width: 40%;
+    margin:  10px auto;
+    display: block;
+    font-weight:  600;
+    background-color: white;
+    border: 2px solid var(--h1color1);
+    border-radius: 6px;
+  }
+
+  #submit:hover {
+    background-color: var(--h1color1);
+    color: white;
+    border: 1px double black;
+  }
+
+  /* How it works */
+  .how-it-works {
+    width: 60vw;
+    min-width: 400px;
+    margin: 0 auto;
+  }
+
+  #video {
+    border-radius: 10px;
+    display: block;
+    margin: 40px auto;
+    aspect-ratio: 560 / 315;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  /* Features */
+
+  .features {
+    width: 70vw;
+    min-width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 20px;
+  }
+  
+  .features img {
+    width: 15%;
+    max-width: 100px;
+    filter: invert(78%) sepia(72%) saturate(784%) hue-rotate(356deg) brightness(99%) contrast(109%);
+
+  }
+
+  .charcontent {
+    width: 80%;
+  }
+
