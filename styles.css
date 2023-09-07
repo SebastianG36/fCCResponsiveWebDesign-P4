@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -90,8 +91,18 @@ body {
     background-color: #dfdfe2;
     color: #1b1b32;
     cursor: pointer;
+    border-radius: 5px;
   }
 
+  nav a {
+    color: var(--h1color2);
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+  nav a:hover {
+    color: var(--h1color1);
+  }
 
 /* MAIN */
 
@@ -103,7 +114,7 @@ main {
 main h1 {
   color: var(--h1color1);
   font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 5px;
@@ -199,3 +210,59 @@ p {
     width: 80%;
   }
 
+  /* Pricing */
+
+  .pricing {
+    width: 70vw;
+    min-width: 400px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 20px;
+  }
+
+  .pricingcont {
+    width: 25%;
+    min-width: 300px;
+    height: 440px;
+    border: solid 2px var(--pcolor1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+  }
+
+  .sdsd {
+    height: 250px;
+    border-bottom: 5px solid var(--h1color2)
+  }
+
+  .pricinginfo {
+    margin-top: -20px;
+    padding: 0 10px;
+  }
+
+  .pricinginfo h1, .pricinginfo p {
+    text-align: left;
+  }
+
+  .price {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #pricing-versions {
+    margin-top: 80px;
+  }
+
+  /* scroll */
+
+  #how-it-works, #features, #pricing-versions {
+    scroll-margin-top: 90px;
+  }
