@@ -104,6 +104,7 @@ body {
     color: var(--h1color1);
   }
 
+
 /* MAIN */
 
 main {
@@ -266,3 +267,27 @@ p {
   #how-it-works, #features, #pricing-versions {
     scroll-margin-top: 90px;
   }
+
+/*media querys*/
+@media (max-width: 690px) {
+  header {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    top: 0;
+    
+  }
+  
+  nav {
+    margin-top: -15px;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 135px;
+  }
+  
+}
